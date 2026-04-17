@@ -8,7 +8,7 @@ Junior DevOps Engineer specializing in **Azure Infrastructure automation, Securi
 *   **Cloud:** **Azure** (Storage, Compute, Networking, Policy), AWS (EC2, S3, EKS)
 *   **Infrastructure as Code (IaC):** **Terraform**, ARM Templates, PowerShell, Bash
 *   **CI/CD:** **GitHub Actions**, Jenkins, Docker, Kubernetes (K8s/AKS/EKS)
-*   **Programming:** **Python**, Bash, Go, SQL
+*   **Programming:** **Python**, Bash
 *   **Compliance & Security:** **NIST 800-53**, FedRAMP, IAM, Sentinel, Azure Policy
 
 ### 🚀 Key Projects
@@ -27,5 +27,5 @@ Junior DevOps Engineer specializing in **Azure Infrastructure automation, Securi
 *   **Solution:** End-to-end Kubernetes infrastructure deployed via Terraform with integrated Prometheus/Grafana monitoring and automated HPA (Horizontal Pod Autoscaling).
 
 ### 🎓 Education
-*   **B.Sc. in Computer Science**
+*   **Diploma in Cloud Engineering** | AltSchool Africa
 *   **Google Associate Cloud Engineer (GCP-ACE)** (In Progress/2026 Path)
