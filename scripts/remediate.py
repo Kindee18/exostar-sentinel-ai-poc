@@ -2,7 +2,7 @@ import os
 import re
 
 def analyze_and_remediate(file_path):
-    print(f"🔍 Analyzing {file_path} for security compliance...")
+    print(f"[ANALYSIS] Analyzing {file_path} for security compliance...")
     
     with open(file_path, 'r') as f:
         content = f.read()
@@ -19,11 +19,11 @@ def analyze_and_remediate(file_path):
         violations.append("Nested items allowed to be public.")
 
     if not violations:
-        print("✅ No immediate security violations found.")
+        print("[SUCCESS] No immediate security violations found.")
         return False
 
-    print(f"⚠️ VIOLATIONS DETECTED: {violations}")
-    print("🤖 AI REMEDIATION: Applying fixes based on NIST 800-53 controls...")
+    print(f"[WARNING] VIOLATIONS DETECTED: {violations}")
+    print("[AI] AI REMEDIATION: Applying fixes based on NIST 800-53 controls...")
 
     # Applying the fix
     fixed_content = content.replace('public_network_access_enabled = true', 'public_network_access_enabled = false')
@@ -32,12 +32,12 @@ def analyze_and_remediate(file_path):
     with open(file_path, 'w') as f:
         f.write(fixed_content)
     
-    print("✅ REMEDIATION COMPLETE: Security hardening applied.")
+    print("[SUCCESS] REMEDIATION COMPLETE: Security hardening applied.")
     return True
 
 if __name__ == "__main__":
     tf_file = "terraform/main.tf"
     if analyze_and_remediate(tf_file):
-        print("🚀 Code is now compliant. Ready for deployment.")
+        print("[START] Code is now compliant. Ready for deployment.")
     else:
-        print("⏭️ No changes needed.")
+        print("[SKIP] No changes needed.")

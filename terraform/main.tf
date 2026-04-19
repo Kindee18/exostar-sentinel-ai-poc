@@ -7,7 +7,7 @@ resource "azurerm_resource_group" "poc" {
   location = "East US"
 }
 
-# 🚩 SECURITY VIOLATION (FOR DEMO): Public access enabled on a storage account
+# [ALERT] SECURITY VIOLATION (FOR DEMO): Public access enabled on a storage account
 resource "azurerm_storage_account" "insecure" {
   name                     = "exostarinsecuresa${random_string.suffix.result}"
   resource_group_name      = azurerm_resource_group.poc.name
