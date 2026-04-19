@@ -20,7 +20,7 @@ jobs:
 
     - name: Run AI-Driven Security Check
       run: |
-        echo "🚀 Starting AI Security Audit..."
+        echo "[START] Starting AI Security Audit..."
         python3 scripts/remediate.py
 
     - name: Set up Terraform
@@ -31,4 +31,4 @@ jobs:
         cd terraform
         terraform init -backend=false
         terraform validate
-        echo "✅ Infrastructure validation passed after remediation."
+        echo "[SUCCESS] Infrastructure validation passed after remediation."
