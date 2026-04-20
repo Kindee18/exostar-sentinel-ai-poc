@@ -36,4 +36,4 @@ cat terraform/main.tf
 ```
 
 ---
-**Built for the Exostar DevOps Team by Aegis Agent.**
+
